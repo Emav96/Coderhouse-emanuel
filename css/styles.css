@@ -1,0 +1,263 @@
+/*Barra de navegacion*/
+.container-fluid {
+    background-color: #100e5b;
+}
+
+.container-fluid ul li a {
+    color: white !important;
+}
+
+.container-fluid ul li {
+    color: white !important;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.container-fluid ul li:hover {
+    background-color: #12113e;
+    border-radius: 8px 0 8px 0;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.btn {
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #12113e;
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #100e5b;
+}
+
+.dropdown-item:hover {
+    background-color: #12113e !important;
+}
+
+.img-navbar {
+    height: 60px;
+    width: 60px;
+
+}
+
+/*Logo bunge navbar*/
+.img-container {
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.img-container img {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.img-container:hover img {
+    transform: scale(1.5);
+
+}
+
+.container-tienda {
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.container-tienda img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.container-tienda:hover img {
+    transform: scale(1.1);
+}
+
+/*Fin logo*/
+/*Footer*/
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a img {
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Logo Tw*/
+.social-twitter {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 6px;
+}
+
+
+.social-twitter {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.social-twitter:hover {
+    transform: scale(1.2);
+
+}
+
+/*Logo face*/
+.social-face {
+    background-color: white;
+    border-radius: 6px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 6px;
+}
+
+
+.social-face {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.social-face:hover {
+    transform: scale(1.2);
+
+}
+
+/*Logo insta*/
+
+.social-insta {
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+
+.social-insta {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.social-insta:hover {
+    transform: scale(1.2);
+
+}
+
+footer {
+    padding: 10px;
+    background-color: #100e5b;
+    margin-top: 15px;
+}
+
+/*Contenido principal de inicio*/
+.portada {
+    display: flex;
+    justify-content: center;
+}
+
+.box-bienvenida {
+    text-align: center;
+    color: #100e5b;
+}
+
+.tienda {
+    text-align: left;
+
+}
+
+.tienda img {
+    height: 600px;
+    width: 600px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tienda h3 {
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 100;
+
+}
+
+.tienda p {
+    margin-top: 15px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.carousel-indicators button {
+    background-color: black !important;
+}
+
+.visually-hidden {
+    background-color: black;
+}
+
+.container-hero {
+    display: flex;
+    border-top: 1px solid #100e5b;
+}
+
+.destacado {
+    display: flex;
+
+}
+
+.img-carousel {
+    height: 400px !important;
+    width: 700px !important;
+
+}
+
+.img-carousel img {
+    height: 400px !important;
+    width: 700px !important;
+}
+
+.box-carousel {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0ed;
+}
+
+/*Galeria de fotos*/
+.galery {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
