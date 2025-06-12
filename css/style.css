@@ -30,6 +30,10 @@
     color: white;
     transition: 0.5s;
 }
+.navbar-toggler{
+    color: white !important;
+    border-color: white !important;
+}
 
 .btn:hover {
     background-color: #12113e;
@@ -45,8 +49,8 @@
 }
 
 .img-navbar {
-    height: 48px;
-    width: 48px;
+    height: 60px;
+    width: auto;
     transition: transform 0.3s;
 }
 
@@ -68,9 +72,6 @@
     margin-bottom: 16px;
     color: #100e5b;
 }
-
-
-/*FIN INDEX*/
 /* FOOTER */
 footer {
     padding: 10px 0;
@@ -238,11 +239,6 @@ body {
     color: #222;
 }
 
-/* Navbar */
-.img-navbar {
-    height: 60px;
-    width: auto;
-}
 
 .img-container {
     display: flex;
@@ -301,12 +297,12 @@ body {
 }
 
 .destacado .card-title {
-    color: #100e5b;
+    color: #e3e3eb;
     font-weight: 600;
 }
 
 .destacado .card-text {
-    color: #444;
+    color: #eceaea;
 }
 
 /* Noticias Destacadas */
@@ -345,8 +341,8 @@ body {
 
 .img-carousel img {
     border-radius: 12px;
-    max-height: 350px;
-    object-fit: cover;
+    max-height: 400px;
+    width: 100%;
 }
 
 /* Footer */
