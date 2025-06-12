@@ -14,7 +14,9 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <div class="img-container">
-        <img src="./img/bunge.png" alt="Bunge" class="img-navbar">
+        <a href="./index.html">
+          <img src="./img/bunge.png" alt="Bunge" class="img-navbar">
+        </a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +36,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Historia</a></li>
-              <li><a class="dropdown-item" href="#">Estadio</a></li>
+              <li><a class="dropdown-item" href="./pages/socio.html">Socios</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -68,15 +70,74 @@
         </div>
         <p>Pasate por nuesta tienda a buscar toda la indumentaria de Bunge.</p>
       </section>
-      <!--Seccion de noticias-->
       <section class="destacado">
-
-        <h3>Subtitulo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odio non, adipisci maxime placeat
-          sapiente illo optio aperiam modi ipsum explicabo blanditiis et nemo libero eum aliquid accusamus harum hic?.
-        </p>
-
+        <section class="container my-5">
+          <h2 class="mb-4 text-center">Próximos Partidos</h2>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Bunge vs Equipo 2</h5>
+                  <p class="card-text mb-1">Fecha: 15/06/2025</p>
+                  <p class="card-text">Hora: 16:00</p>
+                  <p class="card-text">Estadio: Bunge</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Equipo 3 vs Bunge</h5>
+                  <p class="card-text mb-1">Fecha: 22/06/2025</p>
+                  <p class="card-text">Hora: 18:00</p>
+                  <p class="card-text">Estadio: Equipo 3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
+      <section class="container-noticias">
+            <h2 class="mb-4 text-center">Noticias Destacadas</h2>
+            <div id="noticiasCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.ejemplo.com/noticia1" target="_blank" class="text-decoration-none">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../img/noticia1.jpg" class="d-block w-75 rounded mb-3" alt="Noticia 1">
+                                <h5 class="text-dark">¡Bunge gana el clásico!</h5>
+                                <p class="text-secondary">Revive el triunfo histórico en la última fecha.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.ejemplo.com/noticia2" target="_blank" class="text-decoration-none">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../img/noticia2.jpg" class="d-block w-75 rounded mb-3" alt="Noticia 2">
+                                <h5 class="text-dark">Nueva camiseta oficial</h5>
+                                <p class="text-secondary">Conocé el nuevo diseño de la temporada.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.ejemplo.com/noticia3" target="_blank" class="text-decoration-none">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../img/noticia3.jpg" class="d-block w-75 rounded mb-3" alt="Noticia 3">
+                                <h5 class="text-dark">Fiesta del club</h5>
+                                <p class="text-secondary">¡Sumate al evento anual con toda la familia!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#noticiasCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#noticiasCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
     </div>
     <div class="box-carousel">
       <!--Inicio Carousel-->
