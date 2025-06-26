@@ -1,0 +1,28 @@
+@import 'variables';
+
+.destacado .card {
+    border: none;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: $primary-color;
+
+    .card-title {
+        color: #e3e3eb;
+        font-weight: 600;
+    }
+
+    .card-text {
+        color: #eceaea;
+    }
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

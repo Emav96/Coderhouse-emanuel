@@ -1,0 +1,42 @@
+@import 'variables';
+
+footer {
+    background: $primary-color;
+    color: $white;
+    text-align: center;
+    padding: 32px 0 16px 0;
+    margin-top: 48px;
+
+    .container-social {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-top: 10px;
+
+        svg {
+            margin: 0 8px;
+            width: 24px;
+            height: 24px;
+            color: $white;
+            transition: color 0.3s ease;
+        }
+    }
+
+    .social-link svg {
+        margin: 0 8px;
+        width: 24px;
+        height: 24px;
+        color: $white;
+        transition: color 0.3s ease;
+
+    }
+
+    p {
+        text-align: center;
+        color: $white;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
