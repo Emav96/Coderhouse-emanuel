@@ -1,0 +1,147 @@
+@import 'variables';
+
+// Hero Section
+.hero-section {
+    min-height: 60vh;
+    background-image: url('../img/local.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+        background-color: $primary-color;
+        border: none;
+        font-weight: bold;
+        padding: 0.75rem 2rem;
+        font-size: 1.2rem;
+        transition: background 0.2s;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+// Destacados
+.destacados {
+    background: #f8f9fa;
+
+    .destacado-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: $primary-color;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 2px 16px rgba(30, 61, 47, 0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+
+        &:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 6px 24px rgba(30, 61, 47, 0.15);
+        }
+
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        .card-title {
+            color: $primary-color;
+            font-weight: 600;
+        }
+
+        .btn-outline-primary {
+            border-color: $primary-color;
+            color: $primary-color;
+
+            &:hover {
+                background: $primary-color;
+                color: $white
+            }
+        }
+    }
+}
+
+// Próximos Partidos
+.proximos-partidos {
+    background: #e9ecef;
+
+    h2 {
+        color: $primary-color;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .table {
+        background: $gray-primary;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(30, 61, 47, 0.07);
+
+        th,
+        td {
+            vertical-align: middle;
+        }
+
+        thead {
+            background: $primary-color;
+            color: $gray-primary
+        }
+    }
+}
+
+// Videos Recientes
+.videos-recientes {
+    background: #f8f9fa;
+
+    h2 {
+        color: $primary-color;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .ratio {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(30, 61, 47, 0.09);
+        margin-bottom: 1.5rem;
+    }
+}
