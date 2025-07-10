@@ -1,3 +1,4 @@
+// Responsive bienvenida
 @media (max-width: 991px) {
 
     .box-bienvenida,
@@ -11,7 +12,7 @@
         padding: 16px 4vw;
     }
 }
-
+//Responsive Navbar
 @media (max-width: 767px) {
 
     .box-bienvenida,
@@ -36,7 +37,7 @@
         max-height: 140px;
     }
 }
-
+// Responsive Tienda
 @media (max-width: 600px) {
     .img-navbar {
         height: 36px;
@@ -57,6 +58,71 @@
         .title-tienda {
             font-size: 1.3rem;
             margin-bottom: 16px;
+        }
+    }
+}
+//Responsive Historia
+@media (max-width: 767px) {
+    .container-historia {
+        padding: 18px 6vw;
+    }
+
+    .container-historia h1 {
+        font-size: 2rem;
+    }
+
+    .container-historia h2 {
+        font-size: 1.3rem;
+    }
+
+    .container-historia p,
+    .container-historia ul,
+    .container-historia ol,
+    .container-historia blockquote {
+        font-size: 1rem;
+        padding: 0.7rem 1vw;
+    }
+}
+
+// Responsive Galeria
+@media (max-width: 1200px) {
+    .galeria .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .galeria .galeria-item img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 900px) {
+    .galeria .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .galeria .galeria-item img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        padding: 1.2rem 0;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        .galeria-grid {
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 0 1vw;
+        }
+
+        .galeria-item img {
+            height: 120px;
         }
     }
 }

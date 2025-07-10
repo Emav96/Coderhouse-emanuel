@@ -1,5 +1,32 @@
 @import 'variables';
 
+// Animaciones globales
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba($primary-color, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 16px rgba($primary-color, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba($primary-color, 0);
+    }
+}
+
 // Hero Section
 .hero-section {
     min-height: 60vh;
@@ -14,6 +41,7 @@
     text-align: center;
     position: relative;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease both;
 
     &::after {
         content: "";
@@ -47,6 +75,8 @@
         padding: 0.75rem 2rem;
         font-size: 1.2rem;
         transition: background 0.2s;
+        box-shadow: 0 0 0 0 rgba($primary-color, 0.7);
+        animation: pulse 2s infinite;
 
         &:hover {
             background-color: $secondary-color;
@@ -57,6 +87,7 @@
 // Destacados
 .destacados {
     background: #f8f9fa;
+    animation: fadeInUp 1s 0.2s ease both;
 
     .destacado-title {
         font-size: 2.2rem;
@@ -69,7 +100,7 @@
     .card {
         border: none;
         box-shadow: 0 2px 16px rgba(30, 61, 47, 0.08);
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition: transform 0.3s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s cubic-bezier(.4, 2, .6, 1);
 
         &:hover {
             transform: translateY(-8px) scale(1.03);
@@ -80,6 +111,11 @@
             height: 220px;
             object-fit: cover;
             border-radius: 0.5rem 0.5rem 0 0;
+            transition: transform 0.3s cubic-bezier(.4, 2, .6, 1);
+        }
+
+        &:hover .card-img-top {
+            transform: scale(1.06);
         }
 
         .card-title {
@@ -93,7 +129,7 @@
 
             &:hover {
                 background: $primary-color;
-                color: $white
+                color: $white;
             }
         }
     }
@@ -101,28 +137,73 @@
 
 // Próximos Partidos
 .proximos-partidos {
-    background: #e9ecef;
+    background: $gray-primary;
+    padding: 3rem 0;
+    animation: fadeInUp 1s 0.4s ease both;
 
     h2 {
         color: $primary-color;
         font-weight: 700;
         margin-bottom: 2rem;
+        letter-spacing: 1px;
     }
 
-    .table {
-        background: $gray-primary;
+    .table-responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+
+    table {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        background: $white;
         border-radius: 0.5rem;
         overflow: hidden;
         box-shadow: 0 2px 12px rgba(30, 61, 47, 0.07);
 
-        th,
-        td {
-            vertical-align: middle;
-        }
-
         thead {
             background: $primary-color;
-            color: $gray-primary
+
+            th {
+                color: $white;
+                font-size: 1.1rem;
+                font-weight: 700;
+                border: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 1rem 0.75rem;
+            }
+        }
+
+        tbody {
+            tr {
+                transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+
+                &:nth-child(even) {
+                    background: $secondary-color;
+                    color: $white;
+                }
+
+                &:nth-child(odd) {
+                    background: $gray-primary;
+                }
+
+                &:hover {
+                    background: lighten($primary-color, 15%);
+                    color: $white;
+                    transform: scale(1.01);
+                    box-shadow: 0 2px 12px rgba($primary-color, 0.10);
+                }
+
+                td {
+                    border: none;
+                    font-size: 1rem;
+                    padding: 0.85rem 0.75rem;
+                }
+            }
         }
     }
 }
@@ -130,6 +211,7 @@
 // Videos Recientes
 .videos-recientes {
     background: #f8f9fa;
+    animation: fadeInUp 1s 0.6s ease both;
 
     h2 {
         color: $primary-color;
@@ -143,5 +225,14 @@
         overflow: hidden;
         box-shadow: 0 2px 12px rgba(30, 61, 47, 0.09);
         margin-bottom: 1.5rem;
+        transition: transform 0.3s cubic-bezier(.4, 2, .6, 1);
+
+        &:hover iframe {
+            transform: scale(1.06);
+        }
+
+        iframe {
+            transition: transform 0.3s cubic-bezier(.4, 2, .6, 1);
+        }
     }
 }
