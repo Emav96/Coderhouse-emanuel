@@ -1,11 +1,11 @@
 @import 'variables';
 
 .galeria {
+    padding: 2.5rem 0;
     background: #f8f9fa;
-    padding: 3rem 0;
 
     h2 {
-        color: $primary-color;
+        color: #100e5b;
         font-weight: 700;
         margin-bottom: 2rem;
         text-align: center;
@@ -14,66 +14,32 @@
 
     .galeria-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+        padding: 0 2vw;
     }
 
     .galeria-item {
-        background: $white;
-        border-radius: 1rem;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 16px rgba(16, 14, 91, 0.08);
         overflow: hidden;
-        box-shadow: 0 2px 16px rgba(30, 61, 47, 0.10);
-        position: relative;
-        aspect-ratio: 1 / 1;
         display: flex;
-        align-items: flex-end;
-        cursor: pointer;
+        align-items: center;
+        justify-content: center;
         transition: box-shadow 0.3s, transform 0.3s;
 
         &:hover {
-            box-shadow: 0 8px 32px rgba($primary-color, 0.18);
-            transform: translateY(-6px) scale(1.03);
-
-            .overlay {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            img {
-                filter: brightness(0.85) blur(1px);
-                transform: scale(1.05);
-            }
+            box-shadow: 0 6px 24px rgba(16, 14, 91, 0.15);
+            transform: scale(1.03);
         }
 
         img {
             width: 100%;
-            height: 100%;
+            height: 600px;
             object-fit: cover;
-            transition: filter 0.3s, transform 0.3s;
             display: block;
-        }
-
-        .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(0deg, rgba($primary-color, 0.92) 80%, transparent 100%);
-            color: #fff;
-            padding: 1.2rem 1rem 1rem 1rem;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.3s, transform 0.3s;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 0 0 1rem 1rem;
-            text-align: left;
-            pointer-events: none;
-            letter-spacing: 0.5px;
-            box-shadow: 0 -8px 24px rgba($primary-color, 0.12);
+            transition: transform 0.3s;
         }
     }
 }

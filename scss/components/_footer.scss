@@ -20,7 +20,11 @@ footer {
             width: 24px;
             height: 24px;
             color: $white;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        svg:hover {
+            transform: scale(1.5);
         }
     }
 
@@ -29,8 +33,7 @@ footer {
         width: 24px;
         height: 24px;
         color: $white;
-        transition: color 0.3s ease;
-
+        transition: color 0.3s ease, transform 0.3s ease;
     }
 
     p {

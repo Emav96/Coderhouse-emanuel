@@ -86,43 +86,33 @@
 
 // Responsive Galeria
 @media (max-width: 1200px) {
-    .galeria .galeria-grid {
+    .galeria-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
     }
 
-    .galeria .galeria-item img {
+    .galeria-item img {
         height: 180px;
     }
 }
 
 @media (max-width: 900px) {
-    .galeria .galeria-grid {
+    .galeria-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
     }
 
-    .galeria .galeria-item img {
+    .galeria-item img {
         height: 150px;
     }
 }
 
 @media (max-width: 600px) {
-    .galeria {
-        padding: 1.2rem 0;
+    .galeria-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 1vw;
+    }
 
-        h2 {
-            font-size: 1.3rem;
-        }
-
-        .galeria-grid {
-            grid-template-columns: 1fr;
-            gap: 10px;
-            padding: 0 1vw;
-        }
-
-        .galeria-item img {
-            height: 120px;
-        }
+    .galeria-item img {
+        height: 120px;
     }
 }
